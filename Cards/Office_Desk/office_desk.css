@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+.wrap {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+.wrap *,
+.wrap *::before,
+.wrap *::after {
+  position: absolute;
+  content: "";
+}
+.office {
+  width: 800px;
+  height: 600px;
+  animation: start 10s linear infinite;
+}
+.office_top {
+  animation: bgtop 10s ease infinite;
+}
+.office_left {
+  animation: bgleft 10s ease infinite;
+}
+.office_right {
+  animation: bgright 10s ease infinite;
+}
+.office .picture-2 {
+  top: 10px;
+  left: 3px;
+  width: 55px;
+  height: 70px;
+  background: #c6c69c;
+  border: 12px solid #314339;
+}
+.office .picture-2::before {
+  content: "World's best person";
+  text-align: center;
+  font-weight: 600;
+}
+.office .picture-3 {
+  top: -30px;
+  left: 138px;
+  width: 53px;
+  height: 74px;
+  background: #858d75;
+  border: 10px solid #314339;
+}
+.office .picture-4 {
+  top: 79px;
+  left: 138px;
+  width: 164px;
+  height: 86px;
+  background: #aeab21;
+  border: 12px solid #424242;
+  box-shadow: inset 0 0 0 14px #d0c821;
+}
+.office .picture-4::before {
+  top: 26px;
+  left: 102px;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(-45deg, #bdbd86 50%, #737b21 50%);
+}
